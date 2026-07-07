@@ -21,11 +21,10 @@ const ProjectConfig = scripting.addModule("/ti/project_config/ProjectConfig");
 /**
  * Write custom configuration values to the imported modules.
  */
-GPIO1.$name                          = "GPIO_LEDS";
-GPIO1.associatedPins[0].$name        = "USER_LED_1";
-GPIO1.associatedPins[0].assignedPin  = "0";
-GPIO1.associatedPins[0].initialValue = "SET";
-GPIO1.associatedPins[0].pin.$assign  = "PA0";
+GPIO1.$name                          = "LED1";
+GPIO1.associatedPins[0].assignedPort = "PORTA";
+GPIO1.associatedPins[0].assignedPin  = "14";
+GPIO1.associatedPins[0].$name        = "Pin_14";
 
 const Board = scripting.addModule("/ti/driverlib/Board", {}, false);
 
@@ -82,10 +81,11 @@ ProjectConfig.genDisable = true;
  * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
  * re-solve from scratch.
  */
-Board.peripheral.$suggestSolution          = "DEBUGSS";
-Board.peripheral.swclkPin.$suggestSolution = "PA20";
-Board.peripheral.swdioPin.$suggestSolution = "PA19";
-UART1.peripheral.$suggestSolution          = "UART3";
-UART2.peripheral.rxPin.$suggestSolution    = "PA18";
-UART2.peripheral.txPin.$suggestSolution    = "PA17";
-UART3.peripheral.$suggestSolution          = "UART0";
+GPIO1.associatedPins[0].pin.$suggestSolution = "PA14";
+Board.peripheral.$suggestSolution            = "DEBUGSS";
+Board.peripheral.swclkPin.$suggestSolution   = "PA20";
+Board.peripheral.swdioPin.$suggestSolution   = "PA19";
+UART1.peripheral.$suggestSolution            = "UART3";
+UART2.peripheral.rxPin.$suggestSolution      = "PA18";
+UART2.peripheral.txPin.$suggestSolution      = "PA17";
+UART3.peripheral.$suggestSolution            = "UART0";
