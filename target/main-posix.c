@@ -64,4 +64,5 @@ void *Thread(void *arg0)
 void *Thread2(void *arg1)
 {
         DL_GPIO_setPins(LED1_PORT,LED1_PIN_14_PIN);
+        return NULL;
 }
