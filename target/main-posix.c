@@ -51,8 +51,12 @@ uint32_t task_delay = 1;
 
 void *Thread(void *arg0)
 {
-    for (;;) {
-        DL_GPIO_togglePins(GPIO_LEDS_PORT, GPIO_LEDS_USER_LED_1_PIN);
-        sleep(task_delay);
+    while (1) {
+        /* 阻塞等待 UART_0 收到 1 字节 */
+        uint8_t ch = DL_UART_Main_receiveDataBlocking(UART_3_INST);
+        DL_UART_Main_receiveDataBlocking(UART_0_INST, ch);
+        /* 原样发到 UART_1 */
+        DL_UART_Main_transmitDataBlocking(UART_1_INST, ch);
     }
+    return NULL;
 }
