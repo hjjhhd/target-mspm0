@@ -134,9 +134,9 @@ extern "C" {
 /* Port definition for Pin Group LED1 */
 #define LED1_PORT                                                        (GPIOA)
 
-/* Defines for Pin_14: GPIOA.14 with pinCMx 36 on package pin 7 */
-#define LED1_Pin_14_PIN                                         (DL_GPIO_PIN_14)
-#define LED1_Pin_14_IOMUX                                        (IOMUX_PINCM36)
+/* Defines for PIN_14: GPIOA.14 with pinCMx 36 on package pin 7 */
+#define LED1_PIN_14_PIN                                         (DL_GPIO_PIN_14)
+#define LED1_PIN_14_IOMUX                                        (IOMUX_PINCM36)
 
 
 /* clang-format on */

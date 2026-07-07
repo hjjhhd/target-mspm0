@@ -54,7 +54,7 @@ void *Thread(void *arg0)
     while (1) {
         /* 阻塞等待 UART_0 收到 1 字节 */
         uint8_t ch = DL_UART_Main_receiveDataBlocking(UART_3_INST);
-        DL_UART_Main_receiveDataBlocking(UART_0_INST, ch);
+        DL_UART_Main_transmitDataBlocking(UART_0_INST, ch);
         /* 原样发到 UART_1 */
         DL_UART_Main_transmitDataBlocking(UART_1_INST, ch);
     }

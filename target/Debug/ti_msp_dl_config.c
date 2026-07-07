@@ -114,10 +114,10 @@ SYSCONFIG_WEAK void SYSCFG_DL_GPIO_init(void)
     DL_GPIO_initPeripheralInputFunction(
         GPIO_UART_0_IOMUX_RX, GPIO_UART_0_IOMUX_RX_FUNC);
 
-    DL_GPIO_initDigitalOutput(LED1_Pin_14_IOMUX);
+    DL_GPIO_initDigitalOutput(LED1_PIN_14_IOMUX);
 
-    DL_GPIO_clearPins(LED1_PORT, LED1_Pin_14_PIN);
-    DL_GPIO_enableOutput(LED1_PORT, LED1_Pin_14_PIN);
+    DL_GPIO_clearPins(LED1_PORT, LED1_PIN_14_PIN);
+    DL_GPIO_enableOutput(LED1_PORT, LED1_PIN_14_PIN);
 
 }
 
