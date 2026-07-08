@@ -149,7 +149,7 @@ target.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/K230/Program/Target-mspm0/freerto
 
 target.hex: $(EXE_OUTPUTS)
 	@echo 'Arm Hex Utility - building secondary target: "$@"'
-	"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmhex.exe" --diag_wrap=off --intel -o "target.hex" $(EXE_OUTPUTS__QUOTED)
+	"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmhex.exe" --memwidth=8 --romwidth=8 --diag_wrap=off --intel -o "target.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 

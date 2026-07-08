@@ -165,10 +165,10 @@ SYSCONFIG_WEAK void SYSCFG_DL_UART_3_init(void)
 
     /* Configure FIFOs */
     DL_UART_Main_enableFIFOs(UART_3_INST);
-    DL_UART_Main_setRXFIFOThreshold(UART_3_INST, DL_UART_RX_FIFO_LEVEL_ONE_ENTRY);
+    DL_UART_Main_setRXFIFOThreshold(UART_3_INST, DL_UART_RX_FIFO_LEVEL_3_4_FULL);
     DL_UART_Main_setTXFIFOThreshold(UART_3_INST, DL_UART_TX_FIFO_LEVEL_1_2_EMPTY);
 
-    DL_UART_Main_enableLoopbackMode(UART_3_INST);
+    DL_UART_Main_setRXInterruptTimeout(UART_3_INST, 15);
 
     DL_UART_Main_enable(UART_3_INST);
 }
@@ -202,10 +202,10 @@ SYSCONFIG_WEAK void SYSCFG_DL_UART_1_init(void)
 
     /* Configure FIFOs */
     DL_UART_Main_enableFIFOs(UART_1_INST);
-    DL_UART_Main_setRXFIFOThreshold(UART_1_INST, DL_UART_RX_FIFO_LEVEL_ONE_ENTRY);
+    DL_UART_Main_setRXFIFOThreshold(UART_1_INST, DL_UART_RX_FIFO_LEVEL_3_4_FULL);
     DL_UART_Main_setTXFIFOThreshold(UART_1_INST, DL_UART_TX_FIFO_LEVEL_1_2_EMPTY);
 
-    DL_UART_Main_enableLoopbackMode(UART_1_INST);
+    DL_UART_Main_setRXInterruptTimeout(UART_1_INST, 15);
 
     DL_UART_Main_enable(UART_1_INST);
 }
@@ -239,10 +239,10 @@ SYSCONFIG_WEAK void SYSCFG_DL_UART_0_init(void)
 
     /* Configure FIFOs */
     DL_UART_Main_enableFIFOs(UART_0_INST);
-    DL_UART_Main_setRXFIFOThreshold(UART_0_INST, DL_UART_RX_FIFO_LEVEL_ONE_ENTRY);
+    DL_UART_Main_setRXFIFOThreshold(UART_0_INST, DL_UART_RX_FIFO_LEVEL_3_4_FULL);
     DL_UART_Main_setTXFIFOThreshold(UART_0_INST, DL_UART_TX_FIFO_LEVEL_1_2_EMPTY);
 
-    DL_UART_Main_enableLoopbackMode(UART_0_INST);
+    DL_UART_Main_setRXInterruptTimeout(UART_0_INST, 15);
 
     DL_UART_Main_enable(UART_0_INST);
 }

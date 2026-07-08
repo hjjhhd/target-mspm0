@@ -4,7 +4,8 @@ main-posix.o: ../main-posix.c \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang/unistd.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang/sys/types.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang/sys/_internal.h \
- ti_msp_dl_config.h \
+ D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart_main.h \
+ D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/mspm0g350x.h \
@@ -35,9 +36,10 @@ main-posix.o: ../main-posix.c \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/hw_debugss.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h \
+ D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_common.h \
+ ti_msp_dl_config.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/driverlib.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_adc12.h \
- D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_common.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_factoryregion.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_core.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_aes.h \
@@ -76,8 +78,6 @@ main-posix.o: ../main-posix.c \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_timerg.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_trng.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart_extend.h \
- D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart.h \
- D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart_main.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_unicomm.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_unicommi2cc.h \
  D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_unicommi2ct.h \
@@ -90,7 +90,8 @@ main-posix.o: ../main-posix.c \
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang/unistd.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang/sys/types.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang/sys/_internal.h:
-ti_msp_dl_config.h:
+D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart_main.h:
+D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/msp.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/DeviceFamily.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/m0p/mspm0g350x.h:
@@ -121,9 +122,10 @@ D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/hw_cpuss.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/hw_debugss.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h:
+D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_common.h:
+ti_msp_dl_config.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/driverlib.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_adc12.h:
-D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_common.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_factoryregion.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/m0p/dl_core.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_aes.h:
@@ -162,8 +164,6 @@ D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_timerb.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_timerg.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_trng.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart_extend.h:
-D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart.h:
-D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_uart_main.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_unicomm.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_unicommi2cc.h:
 D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/driverlib/dl_unicommi2ct.h:

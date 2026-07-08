@@ -44,6 +44,7 @@
 #include <unistd.h>
 
 /* TI includes for driver configuration */
+#include "ti/driverlib/dl_uart_main.h"
 #include "ti_msp_dl_config.h"
 
 /* 1 second delay */
@@ -57,12 +58,14 @@ void *Thread(void *arg0)
         DL_UART_Main_transmitDataBlocking(UART_0_INST, ch);
         /* 原样发到 UART_1 */
         DL_UART_Main_transmitDataBlocking(UART_1_INST, ch);
+    
     }
     return NULL;
 }
 
 void *Thread2(void *arg1)
 {
+    
         DL_GPIO_setPins(LED1_PORT,LED1_PIN_14_PIN);
         return NULL;
 }
