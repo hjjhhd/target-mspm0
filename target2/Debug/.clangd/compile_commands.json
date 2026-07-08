@@ -1,0 +1,17 @@
+[
+   {
+      "directory" : "D:/K230/Program/Target-mspm0/target2/Debug",
+      "command"   : "clang++ -I\"D:/K230/Program/Target-mspm0/target2\" -I\"D:/K230/Program/Target-mspm0/target2/Debug\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/kernel/freertos/Source/include\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/kernel/freertos/Source/portable/TI_ARM_CLANG/ARM_CM0\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang\" -I\"D:/K230/Program/Target-mspm0/freertos_builds_LP_MSPM0G3507_release_ticlang\" -D__MSPM0G3507__ -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "D:/K230/Program/Target-mspm0/target2/freertos/ticlang/startup_mspm0g350x_ticlang.c"
+   },
+   {
+      "directory" : "D:/K230/Program/Target-mspm0/target2/Debug",
+      "command"   : "clang++ -I\"D:/K230/Program/Target-mspm0/target2\" -I\"D:/K230/Program/Target-mspm0/target2/Debug\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/kernel/freertos/Source/include\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/kernel/freertos/Source/portable/TI_ARM_CLANG/ARM_CM0\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang\" -I\"D:/K230/Program/Target-mspm0/freertos_builds_LP_MSPM0G3507_release_ticlang\" -D__MSPM0G3507__ -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "D:/K230/Program/Target-mspm0/target2/main-posix.c"
+   },
+   {
+      "directory" : "D:/K230/Program/Target-mspm0/target2/Debug",
+      "command"   : "clang++ -I\"D:/K230/Program/Target-mspm0/target2\" -I\"D:/K230/Program/Target-mspm0/target2/Debug\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source/third_party/CMSIS/Core/Include\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/kernel/freertos/Source/include\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/kernel/freertos/Source/portable/TI_ARM_CLANG/ARM_CM0\" -I\"D:/TI/CCS/mspm0_sdk_2_10_00_04/source/ti/posix/ticlang\" -I\"D:/K230/Program/Target-mspm0/freertos_builds_LP_MSPM0G3507_release_ticlang\" -D__MSPM0G3507__ -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "D:/K230/Program/Target-mspm0/target2/main.c"
+   }
+]
