@@ -50,7 +50,15 @@
 uint32_t task_delay = 1;
 
 void *Thread(void *arg0)
-{
+{   
+    DL_GPIO_setPins(LED1_PORT,LED1_PIN_14_PIN);
+    while (1){    
+    //当串口0忙的时候等待，不忙的时候再发送传进来的字符
+    while( DL_UART_isBusy(UART_0_INST) == true );
+    //发送单个字符
+    DL_UART_Main_transmitData(UART_0_INST, 2);
+    usleep(1000);
+    }
     return (0);
 }
 
