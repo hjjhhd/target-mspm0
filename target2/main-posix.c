@@ -52,6 +52,7 @@ uint32_t task_delay = 1;
 void *Thread(void *arg0)
 {
     return (0);
+    sleep(1);
 }
 
 void *Thread2(void *arg0)

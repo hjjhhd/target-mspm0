@@ -50,7 +50,7 @@ extern void *Thread(void *arg0);
 extern void *Thread2(void *arg0);
 
 /* Stack size in bytes */
-#define THREADSTACKSIZE 256
+#define THREADSTACKSIZE 1024
 
 /* Set up the hardware ready to run this demo */
 static void prvSetupHardware(void);
