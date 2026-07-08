@@ -105,14 +105,15 @@ void *UartForwardThread(void *arg0)
     while (1)
     {   
         // 1. 从UART1读取数据
-        
-        // if (bytes_received > 0)
-        // {
+        bytes_received = DL_UART_receiveDataBlocking(UART_1_INST);
+        if (bytes_received > 0)
+        {
         //     // 2. 原样转发到UART0
-            
+            DL_UART_Main_transmitData(UART_0_INST, bytes_received);
         //     // 3. 原样转发到UART2
-
-        // }
+            DL_UART_Main_transmitData(UART_2_INST,bytes_received);
+            bytes_received = 0;
+        }
         // else if (bytes_received < 0)
         // {
         //     // 读取错误处理
