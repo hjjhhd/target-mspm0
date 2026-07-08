@@ -37,22 +37,29 @@ UART1.peripheral.txPin.$assign = "PA10";
 UART1.txPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric0";
 UART1.rxPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric1";
 
-UART2.$name                    = "UART_1";
+UART2.$name                    = "UART_2";
 UART2.targetBaudRate           = 115200;
-UART2.enableFIFO               = true;
-UART2.peripheral.$assign       = "UART1";
-UART2.peripheral.rxPin.$assign = "PA18";
-UART2.peripheral.txPin.$assign = "PA17";
-UART2.txPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric2";
-UART2.rxPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric3";
+UART2.peripheral.$assign       = "UART2";
+UART2.peripheral.rxPin.$assign = "PA22";
+UART2.peripheral.txPin.$assign = "PA23";
+UART2.txPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric4";
+UART2.rxPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric5";
 
-UART3.$name                    = "UART_2";
-UART3.targetBaudRate           = 115200;
-UART3.peripheral.$assign       = "UART2";
-UART3.peripheral.rxPin.$assign = "PA22";
-UART3.peripheral.txPin.$assign = "PA23";
-UART3.txPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric4";
-UART3.rxPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric5";
+UART3.$name                            = "UART_3";
+UART3.targetBaudRate                   = 115200;
+UART3.enabledInterrupts                = ["RX"];
+UART3.peripheral.$assign               = "UART3";
+UART3.peripheral.rxPin.$assign         = "PA25";
+UART3.peripheral.txPin.$assign         = "PA26";
+UART3.txPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric6";
+UART3.txPinConfig.direction            = scripting.forceWrite("OUTPUT");
+UART3.txPinConfig.hideOutputInversion  = scripting.forceWrite(false);
+UART3.txPinConfig.onlyInternalResistor = scripting.forceWrite(false);
+UART3.txPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
+UART3.rxPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric7";
+UART3.rxPinConfig.hideOutputInversion  = scripting.forceWrite(false);
+UART3.rxPinConfig.onlyInternalResistor = scripting.forceWrite(false);
+UART3.rxPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
 
 ProjectConfig.genDisable = true;
 

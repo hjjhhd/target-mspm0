@@ -116,6 +116,10 @@ int main(void)
 static void prvSetupHardware(void)
 {
     SYSCFG_DL_init();
+    //清除串口中断标志 Clear the serial port interrupt flag
+	NVIC_ClearPendingIRQ(UART_3_INST_INT_IRQN);
+	//使能串口中断 Enable serial port interrupt
+	NVIC_EnableIRQ(UART_3_INST_INT_IRQN);
 }
 
 // #if (configSUPPORT_STATIC_ALLOCATION == 1)

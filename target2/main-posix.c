@@ -96,31 +96,22 @@ void *Thread2(void *arg0)
 
 void *UartForwardThread(void *arg0)
 {
-    uint8_t bytes_received;
+    // uint8_t bytes_received = 0;
     
-    while (1)
-    {   
-        if(!DL_UART_isRXFIFOEmpty(UART_1_INST)){
-            // 1. 从UART1读取数据
-            bytes_received = DL_UART_receiveDataBlocking(UART_1_INST);
-            if (bytes_received > 0)
-            {
-            //     // 2. 原样转发到UART0
-                DL_UART_Main_transmitData(UART_0_INST, bytes_received);
-            //     // 3. 原样转发到UART2
-                DL_UART_Main_transmitData(UART_2_INST,bytes_received);
-                bytes_received = 0;
-            }
-            // else if (bytes_received < 0)
-            // {
-            //     // 读取错误处理
-            //     perror("UART1 read error");
-            //     sleep(1);
-            // }
-            // bytes_received == 0 时暂时无数据，继续循环
-        }
-        usleep(100);
-    }
+    // while (1)
+    // {   
+    //     while(!DL_UART_isRXFIFOEmpty(UART_3_INST)){
+    //         bytes_received = DL_UART_receiveDataBlocking(UART_3_INST);
+            
+    //         while (DL_UART_isBusy(UART_2_INST));
+    //         DL_UART_Main_transmitData(UART_2_INST,bytes_received);
+    //         while (DL_UART_isBusy(UART_0_INST));
+    //         DL_UART_Main_transmitData(UART_0_INST, bytes_received);
+
+
+    //     }
+    //     //usleep(20);
+    // }
     
     return (0);
 }
