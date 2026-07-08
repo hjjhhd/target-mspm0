@@ -127,19 +127,9 @@ EXE_OUTPUTS__QUOTED += \
 "target.out" 
 
 BIN_OUTPUTS += \
-target.hex \
 target.hex 
 
 BIN_OUTPUTS__QUOTED += \
-"target.hex" \
-"target.hex" 
-
-BIN_OUTPUTS += \
-target.hex \
-target.hex 
-
-BIN_OUTPUTS__QUOTED += \
-"target.hex" \
 "target.hex" 
 
 
@@ -159,7 +149,7 @@ target.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/K230/Program/Target-mspm0/freerto
 
 target.hex: $(EXE_OUTPUTS)
 	@echo 'Arm Hex Utility - building secondary target: "$@"'
-	"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmhex.exe" --diag_wrap=off --ascii -o "target.hex" $(EXE_OUTPUTS__QUOTED)
+	"D:/TI/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmhex.exe" --diag_wrap=off --intel -o "target.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
@@ -170,7 +160,7 @@ clean:
 	-$(RM) "main-posix.d" "main.d" "ti_msp_dl_config.d" "freertos\ticlang\startup_mspm0g350x_ticlang.d" 
 	-@echo ' '
 
-secondary-outputs: $(BIN_OUTPUTS) $(BIN_OUTPUTS)
+secondary-outputs: $(BIN_OUTPUTS)
 
 .PHONY: all clean dependents
 .SECONDARY:
