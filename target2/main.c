@@ -91,6 +91,13 @@ int main(void)
         }
     }
 
+    retc = pthread_create(&thread, &attrs, Thread2, NULL);
+    if (retc != 0) {
+        /* pthread_create() failed */
+        while (1) {
+        }
+    }
+
     /* Start the FreeRTOS scheduler */
     vTaskStartScheduler();
 

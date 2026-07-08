@@ -57,7 +57,7 @@ void *Thread(void *arg0)
 void *Thread2(void *arg0)
 {   
     while (1)
-    {
+    {   
         DL_GPIO_clearPins(LED1_PORT,LED1_PIN_14_PIN);//输出低电平
         sleep(1);//延时大概1S
         DL_GPIO_setPins(LED1_PORT,LED1_PIN_14_PIN);  //输出高电平
