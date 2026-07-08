@@ -51,8 +51,10 @@ uint32_t task_delay = 1;
 
 void *Thread(void *arg0)
 {
-    for (;;) {
-        DL_GPIO_togglePins(GPIO_LEDS_PORT, GPIO_LEDS_USER_LED_1_PIN);
-        sleep(task_delay);
-    }
+
+}
+
+void *Thread2(void *arg0)
+{
+    
 }

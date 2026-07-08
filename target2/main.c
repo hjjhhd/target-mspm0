@@ -47,6 +47,7 @@
 #include "ti_msp_dl_config.h"
 
 extern void *Thread(void *arg0);
+extern void *Thread2(void *arg0)
 
 /* Stack size in bytes */
 #define THREADSTACKSIZE 256
