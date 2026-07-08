@@ -86,12 +86,12 @@ int main(void)
         }
     }
 
-    retc = pthread_create(&thread, &attrs, Thread, NULL);
-    if (retc != 0) {
-        /* pthread_create() failed */
-        while (1) {
-        }
-    }
+    // retc = pthread_create(&thread, &attrs, Thread, NULL);
+    // if (retc != 0) {
+    //     /* pthread_create() failed */
+    //     while (1) {
+    //     }
+    // }
 
     retc = pthread_create(&thread, &attrs, Thread2, NULL);
     if (retc != 0) {

@@ -108,7 +108,7 @@
                 </configuration>
             </storageModule>
             <storageModule moduleId="org.eclipse.cdt.core.externalSettings">
-                <externalSettings containerId="freertos_builds_LP_MSPM0G3507_release_ticlang;com.ti.ccstudio.buildDefinitions.TMS470.Debug.109737410" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+                <externalSettings containerId="freertos_builds_LP_MSPM0G3507_release_ticlang;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
             </storageModule>
         </cconfiguration>
     </storageModule>
