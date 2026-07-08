@@ -16,6 +16,7 @@ const UART          = scripting.addModule("/ti/driverlib/UART", {}, false);
 const UART1         = UART.addInstance();
 const UART2         = UART.addInstance();
 const UART3         = UART.addInstance();
+const UART4         = UART.addInstance();
 const ProjectConfig = scripting.addModule("/ti/project_config/ProjectConfig");
 
 /**
@@ -61,6 +62,19 @@ UART3.rxPinConfig.hideOutputInversion  = scripting.forceWrite(false);
 UART3.rxPinConfig.onlyInternalResistor = scripting.forceWrite(false);
 UART3.rxPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
 
+UART4.targetBaudRate                   = 115200;
+UART4.$name                            = "UART_1";
+UART4.peripheral.$assign               = "UART1";
+UART4.txPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric2";
+UART4.txPinConfig.direction            = scripting.forceWrite("OUTPUT");
+UART4.txPinConfig.hideOutputInversion  = scripting.forceWrite(false);
+UART4.txPinConfig.onlyInternalResistor = scripting.forceWrite(false);
+UART4.txPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
+UART4.rxPinConfig.$name                = "ti_driverlib_gpio_GPIOPinGeneric3";
+UART4.rxPinConfig.hideOutputInversion  = scripting.forceWrite(false);
+UART4.rxPinConfig.onlyInternalResistor = scripting.forceWrite(false);
+UART4.rxPinConfig.passedPeripheralType = scripting.forceWrite("Digital");
+
 ProjectConfig.genDisable = true;
 
 /**
@@ -73,3 +87,5 @@ Board.peripheral.$suggestSolution            = "DEBUGSS";
 Board.peripheral.swclkPin.$suggestSolution   = "PA20";
 Board.peripheral.swdioPin.$suggestSolution   = "PA19";
 UART1.peripheral.$suggestSolution            = "UART0";
+UART4.peripheral.rxPin.$suggestSolution      = "PA18";
+UART4.peripheral.txPin.$suggestSolution      = "PA17";

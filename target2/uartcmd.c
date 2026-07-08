@@ -9,8 +9,8 @@ void UART_3_INST_IRQHandler(void)
 	{
 		case DL_UART_IIDX_RX://如果是接收中断 If it is a receive interrupt
 			receivedData = DL_UART_Main_receiveData(UART_3_INST);
-			while (DL_UART_isBusy(UART_2_INST));
-            DL_UART_Main_transmitData(UART_2_INST,receivedData);
+			while (DL_UART_isBusy(UART_1_INST));
+            DL_UART_Main_transmitData(UART_1_INST,receivedData);
             while (DL_UART_isBusy(UART_0_INST));
             DL_UART_Main_transmitData(UART_0_INST, receivedData);
 			break;
