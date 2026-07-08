@@ -22,6 +22,15 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "target (1)",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "target",
+                "resourceId": "/target"
+            }
         }
     ]
 }
