@@ -55,5 +55,12 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "python.analysis.extraPaths": [
+    "C:\\Users\\24473\\.kendryte\\k230_canmv_stubs\\db23dc421c63b6f6b3010fd16ad3ac8db57c6f83"
+  ],
+  "python.analysis.stubPath": "C:\\Users\\24473\\.kendryte\\k230_canmv_pylance\\a2a9c402935366ff\\typings",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingModuleSource": "none"
+  }
 }
