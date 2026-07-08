@@ -48,6 +48,8 @@
 
 extern void *Thread(void *arg0);
 extern void *Thread2(void *arg0);
+extern void *UartForwardThread(void *arg0);
+
 
 /* Stack size in bytes */
 #define THREADSTACKSIZE 256
@@ -92,6 +94,13 @@ int main(void)
     }
 
     retc = pthread_create(&thread, &attrs, Thread2, NULL);
+    if (retc != 0) {
+        /* pthread_create() failed */
+        while (1) {
+        }
+    }
+
+    retc = pthread_create(&thread, &attrs, UartForwardThread, NULL);
     if (retc != 0) {
         /* pthread_create() failed */
         while (1) {
