@@ -138,7 +138,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "target.out" secondary-outputs
 
 dependents:
-	-cd D:/K230/Program/Target-mspm0/freertos_builds_LP_MSPM0G3507_release_ticlang/Debug && $(MAKE) clean all
+	-cd D:/K230/Program/Target-mspm0/freertos_builds_LP_MSPM0G3507_release_ticlang/Debug && $(MAKE) all
 
 # Tool invocations
 target.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/K230/Program/Target-mspm0/freertos_builds_LP_MSPM0G3507_release_ticlang/Debug/freertos_builds_LP_MSPM0G3507_release_ticlang.lib

@@ -64,8 +64,17 @@ void *Thread(void *arg0)
 }
 
 void *Thread2(void *arg1)
+<<<<<<< HEAD
 {
     
         DL_GPIO_setPins(LED1_PORT,LED1_PIN_14_PIN);
+=======
+{   
+    DL_UART_Main_transmitDataBlocking(UART_0_INST, '2');
+    while (1){
+        DL_GPIO_togglePins(LED1_PORT,LED1_PIN_14_PIN);
+        sleep(1);
+>>>>>>> a8cabe6f516fb566e3e4d17b6c13b5e60f5c0625
         return NULL;
+    }
 }
